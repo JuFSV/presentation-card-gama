@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/20e4a4868d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styleap.css'>
+    <title>.: JF :.</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./Imagens/logojf.jpg" alt="Logo Julian Fontes">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/JuFSV">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jufsv">linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/5521995848937">whatsapp</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:julianafsv@gmail.com">e-mail</a>
+            </li>
+        </ul>
+    </header><hr>
+    <main>
+        <section class="container">
+            <div>
+                <h1>Julian Fontes</h1>
+                <h2>Estudante Full Stack Developer</h2>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p> Oi, eu sou o Julian!<br/>
+                    Sou fisioterapeuta há 6 anos, e estou em transição para carreira de desenvolvedor! Me siga nas redes sociais para saber mais sobre meu trabalho.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p><br/>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu e-mail :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
